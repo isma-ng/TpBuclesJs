@@ -90,8 +90,6 @@ Loops: for, while, break, continue
 
 Validation: chequeo de valores null y strings vacíos
 
-Array methods: includes() para búsquedas
-
 ## ✨ Bonus
 Prueba modificar los ejercicios para:
 
