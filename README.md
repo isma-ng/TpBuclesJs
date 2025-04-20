@@ -93,3 +93,29 @@ Validation: chequeo de valores null y strings vacíos
 Array methods: includes() para búsquedas
 
 ## ✨ Bonus
+Prueba modificar los ejercicios para:
+
+Aceptar solo texto alfabético (sin números)
+
+Contar consonantes en lugar de vocales
+
+Mostrar todas las vocales encontradas, no solo la primera
+
+## 🤝 Contribuciones
+¡Contribuciones son bienvenidas! Si quieres agregar más ejercicios o mejorar los existentes:
+
+Haz fork del repositorio
+
+Crea tu rama (git checkout -b nueva-funcionalidad)
+
+Haz commit de tus cambios (git commit -m 'Agrego ejercicio')
+
+Haz push a la rama (git push origin nueva-funcionalidad)
+
+Abre un Pull Request
+
+## 📜 Licencia
+MIT © 2023 [ISMAEL ISA]
+
+Hecho con ❤️ para la comunidad de programadores
+
