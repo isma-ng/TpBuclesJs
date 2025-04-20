@@ -1,4 +1,4 @@
-📝 README - Ejercicios de Programación JavaScript
+###📝 README - Ejercicios de Programación JavaScript
 📌 Descripción
 Este repositorio contiene una colección de ejercicios prácticos de JavaScript diseñados para mejorar tus habilidades de programación. Cada ejercicio resuelve un problema específico trabajando con strings, bucles y estructuras de control.
 
