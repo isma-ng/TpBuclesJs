@@ -75,3 +75,21 @@ if (!texto) {
     alert(posicion === -1 ? "No se encontraron vocales" : 
           `Primera vocal en posición ${posicion}`);
 } 
+```
+ ## 🛠️ Cómo Usar
+Clona este repositorio
+
+Abre cada archivo .js en tu navegador o ejecútalo con Node.js
+
+Sigue las instrucciones en los prompts
+
+� Conceptos Aprendidos
+String manipulation: toUpperCase(), trim(), charAt()
+
+Loops: for, while, break, continue
+
+Validation: chequeo de valores null y strings vacíos
+
+Array methods: includes() para búsquedas
+
+## ✨ Bonus
