@@ -27,3 +27,21 @@ while (!salir) {
     salir = !confirm("¿Quieres introducir otro texto?");
 }
 alert("Gracias por usar el programa. ¡Hasta pronto!");
+
+// Ejercicio 2: Separar letras con guiones
+while (true) {
+    const texto = prompt("Introduce un texto:");
+    if (texto === null || texto.trim() === "") {
+        alert("Texto no válido. Intenta nuevamente.");
+        continue;
+    }
+    
+    let resultado = "";
+    for (let i = 0; i < texto.length; i++) {
+        resultado += texto[i];
+        if (i < texto.length - 1) resultado += "-";
+    }
+    
+    alert(`Texto separado: ${resultado}`);
+    if (!confirm("¿Deseas procesar otro texto?")) break;
+}
