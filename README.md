@@ -117,6 +117,28 @@ Loops: for, while, break, continue
 
 Validation: chequeo de valores null y strings vacíos
 
+# 🛠️ Clonar un Repositorio de GitHub
+
+## 📋 Pasos para Clonar un Repositorio
+
+### 1. **Encontrar el repositorio en GitHub**
+   - Accede a [github.com](https://github.com)
+   - Navega hasta el repositorio que deseas clonar
+
+### 2. **Copiar la URL del repositorio**
+   - Haz clic en el botón verde **"Code"**
+   - Selecciona **HTTPS** (recomendado para principiantes)
+   - Copia la URL (ejemplo: `https://github.com/usuario/repositorio.git`)
+
+### 3. **Abrir terminal/Git Bash**
+   - **Windows:** Git Bash o CMD
+   - **Mac/Linux:** Terminal
+
+### 4. **Ejecutar comando de clonación**
+```bash
+git clone https://github.com/usuario/repositorio.git
+```
+
 ## ✨ Bonus
 Prueba modificar los ejercicios para:
 
