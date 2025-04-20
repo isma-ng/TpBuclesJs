@@ -14,67 +14,94 @@ Este repositorio contiene una colección de ejercicios prácticos de JavaScript 
 
 ### 1. Convertidor a Mayúsculas
 ```javascript
-// Ejercicio 1: Convertir texto a mayúsculas
-let salir = false;
-while (!salir) {
+// Ejercicio 1: texto invertido
+
+while (true) { 
     const texto = prompt("Introduce un texto:");
     if (texto === null || texto.trim() === "") {
         alert("No se ha introducido un texto válido.");
+        continue; 
     } else {
-        const textoMayusculas = texto.toUpperCase();
-        alert("Texto en mayúsculas: " + textoMayusculas);
+        let resultado = ""; 
+        for (let i = texto.length - 1; i >= 0; i--) {
+            resultado += texto.charAt(i);
+        }
+        alert("Texto al revés: " + resultado);
     }
-    salir = !confirm("¿Quieres introducir otro texto?");
+    const continuar = confirm("¿Quieres introducir otro texto?");
+    if (!continuar) {
+        alert("Gracias por usar el programa. <3");
+        break; 
+    }
 }
-alert("Gracias por usar el programa. ¡Hasta pronto!");
 
 // Ejercicio 2: Separar letras con guiones
-while (true) {
+for (let t = 0; t < 1; ) { 
     const texto = prompt("Introduce un texto:");
-    if (texto === null || texto.trim() === "") {
-        alert("Texto no válido. Intenta nuevamente.");
-        continue;
+    if (texto === null || texto.trim() === "" ) {
+        alert("No se ha introducido un texto válido.");
+        continue; 
+    } else {
+        let resultado = "";
+        for (let r = 0; r < texto.length; r++) {
+            resultado += texto.charAt(r);
+            if (r < texto.length - 1) {
+                resultado += "-";
+            }
+        }
+        alert("Texto con guiones: " + resultado);
     }
-    
-    let resultado = "";
-    for (let i = 0; i < texto.length; i++) {
-        resultado += texto[i];
-        if (i < texto.length - 1) resultado += "-";
+    const continuar = confirm("¿Quieres introducir otro texto?");
+    if (!continuar) {
+        alert("Gracias por usar el programa. <3");
+        break; 
     }
-    
-    alert(`Texto separado: ${resultado}`);
-    if (!confirm("¿Deseas procesar otro texto?")) break;
 }
 
 // Ejercicio 3: Contar vocales en un texto
-const texto = prompt("Introduce un texto para contar vocales:").trim();
-if (!texto) {
-    alert("No se ingresó texto válido");
-} else {
-    const vocales = "aeiouáéíóúüAEIOUÁÉÍÓÚÜ";
-    let contador = 0;
-    for (let letra of texto) {
-        if (vocales.includes(letra)) contador++;
+while (true) {
+    const texto = prompt("Introduce un texto:");
+    if (texto === null || texto.trim() === "" ) {
+        alert("No se ha introducido un texto válido.");
+        continue; 
+    } else {
+        let contadorVocales = 0;
+        const vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";
+        for (let i = 0; i < texto.length; i++) {
+            const caracter = texto.charAt(i);
+            if (vocales.includes(caracter)) {
+                contadorVocales++;
+            }
+        }
+        alert(`El texto tiene ${contadorVocales} vocales.`);
     }
-    alert(`El texto tiene ${contador} ${contador === 1 ? 'vocal' : 'vocales'}`);
+    const continuar = confirm("¿Quieres introducir otro texto?");
+    if (!continuar) {
+        alert("Gracias por usar el programa. <3");
+        break; 
+    }
 }
 
 // Ejercicio 4: Encontrar la primera vocal
-const texto = prompt("Introduce un texto para buscar vocales:").trim();
-if (!texto) {
-    alert("Texto no válido");
+const texto = prompt("Introduce un texto:");
+if (texto === null || texto.trim() === "") {
+    alert("No se ha introducido un texto válido.");
 } else {
-    const vocales = "aeiouAEIOUáéíóúÁÉÍÓÚ";
     let posicion = -1;
+    const vocales = "aeiouáéíóúüAEIOUÁÉÍÓÚÜ";
+    
     for (let i = 0; i < texto.length; i++) {
         if (vocales.includes(texto[i])) {
-            posicion = i + 1; // Posición humana (empieza en 1)
-            break;
+            posicion = i;
+            break; 
         }
     }
-    alert(posicion === -1 ? "No se encontraron vocales" : 
-          `Primera vocal en posición ${posicion}`);
-} 
+    if (posicion === -1) {
+        alert("No se encontraron vocales en el texto.");
+    } else {
+        alert(`La primera vocal '${texto[posicion]}' está en la posición ${posicion + 1} `);
+    }
+}
 ```
  ## 🛠️ Cómo Usar
 Clona este repositorio
