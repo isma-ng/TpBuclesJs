@@ -45,3 +45,33 @@ while (true) {
     alert(`Texto separado: ${resultado}`);
     if (!confirm("¿Deseas procesar otro texto?")) break;
 }
+
+// Ejercicio 3: Contar vocales en un texto
+const texto = prompt("Introduce un texto para contar vocales:").trim();
+if (!texto) {
+    alert("No se ingresó texto válido");
+} else {
+    const vocales = "aeiouáéíóúüAEIOUÁÉÍÓÚÜ";
+    let contador = 0;
+    for (let letra of texto) {
+        if (vocales.includes(letra)) contador++;
+    }
+    alert(`El texto tiene ${contador} ${contador === 1 ? 'vocal' : 'vocales'}`);
+}
+
+// Ejercicio 4: Encontrar la primera vocal
+const texto = prompt("Introduce un texto para buscar vocales:").trim();
+if (!texto) {
+    alert("Texto no válido");
+} else {
+    const vocales = "aeiouAEIOUáéíóúÁÉÍÓÚ";
+    let posicion = -1;
+    for (let i = 0; i < texto.length; i++) {
+        if (vocales.includes(texto[i])) {
+            posicion = i + 1; // Posición humana (empieza en 1)
+            break;
+        }
+    }
+    alert(posicion === -1 ? "No se encontraron vocales" : 
+          `Primera vocal en posición ${posicion}`);
+} 
