@@ -35,30 +35,23 @@ while (true) {
     }
 }
 
-// Ejercicio 14: Separar letras con guiones
-for (let t = 0; t < 1; ) { 
-    const texto = prompt("Introduce un texto:");
-    if (texto === null || texto.trim() === "" ) {
-        alert("No se ha introducido un texto válido.");
-        continue; 
+// Ejercicio 12: numero aleatorio
+
+let salir = false;
+while (!salir) {
+    const numeroAleatorio = Math.floor(Math.random() * 99) + 1;
+    const confirmacion = confirm("¿Quieres generar un número aleatorio entre 1 y 99?");
+    if (confirmacion) {
+        alert("Número aleatorio generado: " + numeroAleatorio);
     } else {
-        let resultado = "";
-        for (let r = 0; r < texto.length; r++) {
-            resultado += texto.charAt(r);
-            if (r < texto.length - 1) {
-                resultado += "-";
-            }
-        }
-        alert("Texto con guiones: " + resultado);
-    }
-    const continuar = confirm("¿Quieres introducir otro texto?");
-    if (!continuar) {
-        alert("Gracias por usar el programa. <3");
-        break; 
+        alert("No se generó ningún número aleatorio. gracias por usar el programa. <3");
+        salir = true; 
     }
 }
 
+
 // Ejercicio 15: Contar vocales en un texto
+
 while (true) {
     const texto = prompt("Introduce un texto:");
     if (texto === null || texto.trim() === "" ) {
@@ -83,6 +76,7 @@ while (true) {
 }
 
 // Ejercicio 10: Filas y columnas
+
 const filas = parseInt(prompt("Introduce el número de filas:"))
 const columnas = parseInt(prompt("Introduce el número de columnas:"))
 let valor = filas * columnas
@@ -101,6 +95,7 @@ if (!isNaN(filas) && filas > 0 && !isNaN(columnas) && columnas > 0) {
 } else {
     alert("Introduce un número válido.");
 }
+
 ```
  ## 🛠️ Cómo Usar
 Clona este repositorio
