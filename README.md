@@ -156,7 +156,8 @@ Haz push a la rama (git push origin nueva-funcionalidad)
 Abre un Pull Request
 
 ## 📜 Licencia
-MIT © 2023 [ISMAEL ISA]
+MIT © 2025 [ISMAEL ISA]
+MI GITHUB: https://github.com/isma-ng
 
 Hecho con ❤️ para la comunidad de programadores
 
