@@ -14,7 +14,7 @@ Este repositorio contiene una colección de ejercicios prácticos de JavaScript 
 
 ### 1. Convertidor a Mayúsculas
 ```javascript
-// Ejercicio 1: texto invertido
+// Ejercicio 16: texto invertido
 
 while (true) { 
     const texto = prompt("Introduce un texto:");
@@ -35,7 +35,7 @@ while (true) {
     }
 }
 
-// Ejercicio 2: Separar letras con guiones
+// Ejercicio 14: Separar letras con guiones
 for (let t = 0; t < 1; ) { 
     const texto = prompt("Introduce un texto:");
     if (texto === null || texto.trim() === "" ) {
@@ -58,7 +58,7 @@ for (let t = 0; t < 1; ) {
     }
 }
 
-// Ejercicio 3: Contar vocales en un texto
+// Ejercicio 15: Contar vocales en un texto
 while (true) {
     const texto = prompt("Introduce un texto:");
     if (texto === null || texto.trim() === "" ) {
@@ -82,25 +82,24 @@ while (true) {
     }
 }
 
-// Ejercicio 4: Encontrar la primera vocal
-const texto = prompt("Introduce un texto:");
-if (texto === null || texto.trim() === "") {
-    alert("No se ha introducido un texto válido.");
-} else {
-    let posicion = -1;
-    const vocales = "aeiouáéíóúüAEIOUÁÉÍÓÚÜ";
-    
-    for (let i = 0; i < texto.length; i++) {
-        if (vocales.includes(texto[i])) {
-            posicion = i;
-            break; 
+// Ejercicio 10: Filas y columnas
+const filas = parseInt(prompt("Introduce el número de filas:"))
+const columnas = parseInt(prompt("Introduce el número de columnas:"))
+let valor = filas * columnas
+
+if (!isNaN(filas) && filas > 0 && !isNaN(columnas) && columnas > 0) {
+    document.writeln(`<table><tbody>`);
+    for (let f = 0; f < filas; f++) {
+        document.writeln(`<tr>`);
+        for (let c = 0; c < columnas; c++) {
+            document.writeln(`<td>${valor}</td>`);
+            valor--;
         }
+        document.writeln(`</tr>`);
     }
-    if (posicion === -1) {
-        alert("No se encontraron vocales en el texto.");
-    } else {
-        alert(`La primera vocal '${texto[posicion]}' está en la posición ${posicion + 1} `);
-    }
+    document.writeln(`</tbody></table>`);
+} else {
+    alert("Introduce un número válido.");
 }
 ```
  ## 🛠️ Cómo Usar
