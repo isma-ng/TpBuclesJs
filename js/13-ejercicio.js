@@ -1,5 +1,5 @@
 //Realiza un script que pida un texto y lo muestre en mayúsculas.
-for (let i = 0; i < 1; ) { 
+for (let t = 0; t < 1; ) { 
     const texto = prompt("Introduce un texto:");
     if (texto === null || texto.trim() === "" || Number) {
         alert("No se ha introducido un texto válido.");
